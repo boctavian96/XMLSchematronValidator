@@ -1,0 +1,29 @@
+<books>
+
+	<book price="500">
+		<title>Javascript for dummies</title>
+		<author>Adelina Kopitulina</author>
+		<isbn>1241351131</isbn>
+	</book>
+
+	<book price="999">
+		<title>Drunkyard's Manual</title>
+		<author>Maestrul Betivan</author>
+		<isbn>1241356666</isbn>
+	</book>
+
+	<!-- Ar trebui sa-si dea trigger report -->
+	<book price="999">
+		<title>Pappilon</title>
+		<author>Charles de Valois</author>
+		<isbn>31513666</isbn>
+	</book>
+
+	<!-- Ar trebui sa-si dea trigger test -->
+	<book price="50">
+		<title>Valo</title>
+		<author>Maestrul Betivan</author>
+		<isbn>111222333444</isbn>
+	</book>
+
+</books>
