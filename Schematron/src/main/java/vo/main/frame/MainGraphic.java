@@ -50,7 +50,6 @@ public class MainGraphic extends Frame implements ActionListener {
 		validateButton = new Button("Validate");
 		validateButton.addActionListener(new ActionListener() {
 
-			@Override
 			public void actionPerformed(ActionEvent e) {
 
 				if (xmlfInput.getText().length() > 0 && schemafOutput.getText().length() > 0) {
@@ -84,42 +83,35 @@ public class MainGraphic extends Frame implements ActionListener {
 
 		addWindowListener(new WindowListener() {
 
-			@Override
 			public void windowOpened(WindowEvent e) {
 				// TODO Auto-generated method stub
 
 			}
 
-			@Override
 			public void windowIconified(WindowEvent e) {
 				// TODO Auto-generated method stub
 
 			}
 
-			@Override
 			public void windowDeiconified(WindowEvent e) {
 				// TODO Auto-generated method stub
 
 			}
 
-			@Override
 			public void windowDeactivated(WindowEvent e) {
 				// TODO Auto-generated method stub
 
 			}
 
-			@Override
 			public void windowClosing(WindowEvent e) {
 				System.out.print("I am closed... Bye bye!");
 				System.exit(0);
 			}
 
-			@Override
 			public void windowClosed(WindowEvent e) {
 
 			}
 
-			@Override
 			public void windowActivated(WindowEvent e) {
 				// TODO Auto-generated method stub
 
@@ -135,7 +127,6 @@ public class MainGraphic extends Frame implements ActionListener {
 		new MainGraphic();
 	}
 
-	@Override
 	public void actionPerformed(ActionEvent e) {
 
 	}
@@ -152,23 +143,23 @@ public class MainGraphic extends Frame implements ActionListener {
 		messageFrame.add(new Label(message));
 		messageFrame.addWindowListener(new WindowListener() {
 
-			@Override
+			
 			public void windowOpened(WindowEvent e) {
 			}
 
-			@Override
+			
 			public void windowIconified(WindowEvent e) {
 			}
 
-			@Override
+			
 			public void windowDeiconified(WindowEvent e) {
 			}
 
-			@Override
+			
 			public void windowDeactivated(WindowEvent e) {
 			}
 
-			@Override
+			
 			public void windowClosing(WindowEvent e) {
 				System.out.println("I am hidden");
 
@@ -176,11 +167,11 @@ public class MainGraphic extends Frame implements ActionListener {
 				messageFrame.setEnabled(false);
 			}
 
-			@Override
+			
 			public void windowClosed(WindowEvent e) {
 			}
 
-			@Override
+			
 			public void windowActivated(WindowEvent e) {
 			}
 		});
@@ -193,6 +184,10 @@ public class MainGraphic extends Frame implements ActionListener {
 		return messageFrame;
 	}
 
+	/**
+	 * Only for test purposes.
+	 * @return Builds a frame with the message: "Hey i am just a test..."
+	 */
 	private Frame buildMessageFrame() {
 		return buildMessageFrame("Hey i am just a test...");
 	}
