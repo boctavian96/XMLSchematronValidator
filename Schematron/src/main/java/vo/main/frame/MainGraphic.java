@@ -72,7 +72,7 @@ public class MainGraphic extends Frame implements ActionListener {
 						}
 					} catch (Exception ex) {
 						ex.printStackTrace();
-						buildMessageFrame();
+						buildMessageFrame("Error: Check your input files!");
 					}
 				} else {
 					System.out.println("Nice try! Fill with text...");
